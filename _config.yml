@@ -1,4 +1,5 @@
-name: Your New Jekyll Site
+name: Forward
 markdown: redcarpet
 pygments: true
-baseurl: /forward
+baseurl: 
+url: http://file.xcv58.com
