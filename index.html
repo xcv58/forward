@@ -5,5 +5,5 @@
   var ipAddress = xmlHttp.responseText;
   ipAddress = ipAddress.replace("\n","");
   var url = "http://" + ipAddress + ":8000";
-  window.location.replace(url);
+  window.location = url;
 </script>
