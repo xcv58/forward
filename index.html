@@ -1,13 +1,10 @@
 <script type="text/JavaScript">
   {
-  var xmlHttp = null;
-  xmlHttp = new XMLHttpRequest();
+  var xmlHttp = new XMLHttpRequest();
   xmlHttp.open( "GET", "https://dl.dropboxusercontent.com/u/4121165/ip", false );
-  xmlHttp.send( null );
   var ipAddress = xmlHttp.responseText;
   ipAddress = ipAddress.replace("\n","");
   var url = "http://" + ipAddress + ":8000";
-  alert(url);
   window.location.replace(url);
   }
 </script>
