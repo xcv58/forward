@@ -1,9 +1,19 @@
+<script>
+var myip;
+function ip_callback(o) {
+    myip = o.host;
+}
+</script>
+<script src="https://smart-ip.net/geoip-json?callback=ip_callback"></script>
 <script type="text/JavaScript">
   var xmlHttp = new XMLHttpRequest();
   xmlHttp.open( "GET", "https://dl.dropboxusercontent.com/u/4121165/ip", false );
   xmlHttp.send( null );
   var ipAddress = xmlHttp.responseText;
   ipAddress = ipAddress.replace("\n","");
+  if (ipAddress == myip) {
+  ipAddress = "xcv58.local";
+  }
   var url = "http://" + ipAddress + ":8000";
   window.location = url;
 </script>
