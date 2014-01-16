@@ -12,7 +12,7 @@ function ip_callback(o) {
   var ipAddress = xmlHttp.responseText;
   ipAddress = ipAddress.replace("\n","");
   if (ipAddress == myip) {
-  ipAddress = "xcv58.local";
+  ipAddress = "xcv58.home";
   }
   var url = "http://" + ipAddress + ":8000";
   window.location = url;
